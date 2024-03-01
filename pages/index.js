@@ -6,7 +6,7 @@ import Container from '../components/styled/Container';
 
 export default function Home({ restaurants }) {
   return (
-    <Container maxWidth="80%" >
+    <Container maxwidth="80%" >
       <RestaurantList restaurants={restaurants} />
       </Container>
   )
