@@ -4,16 +4,16 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'restaurant-api.dicoding.dev',
-        port: '',
+        protocol: "https",
+        hostname: "www.themealdb.com",
+        port: "",
         //pathname: '/images/small/**',
       },
     ],
   },
   compiler: {
-    styledComponents: true
-  }
-}
+    styledComponents: true,
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
