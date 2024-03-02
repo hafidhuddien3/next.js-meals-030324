@@ -89,17 +89,19 @@ export default function Detail({ result }) {
     strIngredient20 + " ( " + strMeasure20 + " )",
   ];
 
-  let ingredientFilter = [];
+  const ingredientFilter = [];
+  
 
   ingredient.forEach(deleteEmpty);
 
   function deleteEmpty(item) {
-    if (item != " (   )") {
+    if (item.charAt(0)!=' ') {
       ingredientFilter.push(item);
     }
   }
 
-  //console.log('log = ',ingredientFilter);
+  //console.log('logI = ',ingredient);
+  //console.log('logF = ',ingredientFilter);
 
   return (
     <Container>
@@ -126,8 +128,8 @@ export default function Detail({ result }) {
 
         <ol>
           {ingredientFilter.map((ingredient) => {
-            let getIndex = ingredient.indexOf("(");
-            let filteredIngredient = ingredient.slice(0, getIndex - 1);
+            const getIndex = ingredient.indexOf("(");
+            const filteredIngredient = ingredient.slice(0, getIndex - 1);
 
             return (
               <li key={ingredient}>
