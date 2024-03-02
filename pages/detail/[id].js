@@ -115,7 +115,8 @@ export default function Detail({ result }) {
 
       <header>
         <h1>{"Meal Name : " + strMeal}</h1>
-        <p>{strArea + " " + strCategory + " " + strTags}</p>
+        <p>{strArea + " " + strCategory}</p>
+        {strTags}
       </header>
 
       <br />
