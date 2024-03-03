@@ -95,7 +95,7 @@ export default function Detail({ result }) {
   ingredient.forEach(deleteEmpty);
 
   function deleteEmpty(item) {
-    if (item.charAt(0)!=' ') {
+    if (item.charAt(0) != ' ' && item != 'null ( null )') {
       ingredientFilter.push(item);
     }
   }
